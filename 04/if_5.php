@@ -1,6 +1,9 @@
 <?php
 
-$num = 10;
+$num = 3;
+
+// if ($num = 1)
+// echo $num . 'は素数ではないぜ！';
 
 $flg = true;
 for ($i = 2; $i < $num; $i++) {
@@ -10,7 +13,7 @@ for ($i = 2; $i < $num; $i++) {
     }
 }
 
-if ($flg) {
+if ($num != 1 && $flg) {
     echo $num . "は素数です。";
 } else {
     echo $num . "は素数ではありません。";
